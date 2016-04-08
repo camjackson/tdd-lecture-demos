@@ -46,8 +46,25 @@ Coding demos to teach TDD, stubbing, and mocking
   * itScores0WhenPlagiarised
 
 
+## Demo 5: Manual mocking
+  * Inject a StudentEmailService and call it at the end
+  * Point out how problematic it is for all of our tests
+  * First want to just remove the side-effect:  `class FakeStudentEmailService extends StudentEmailService`
 
-## Demo 5: Stubbing using a framework
+  * Now we want to assert that the side effect happened
+  * Make the Fake a Mock, and track the arguments
+  * It passes the assignment and mark to the email service
+
+
+
+----
+
+Probably won't do these demos. Will probably talk about mockito, and *maybe* show code samples.
+But the demos are too much.
+
+
+
+## Demo X: Stubbing using a framework
   * Foo foo = mock(Foo.class);
   * when(foo.bar("baz")).thenReturn("qux");
 
@@ -59,7 +76,7 @@ Coding demos to teach TDD, stubbing, and mocking
   * Try to do (0, false, true) -> ArgException
 
 
-## Demo 6: Using mocks to verify behaviour
+## Demo X: Using mocks to verify behaviour
   * Write 'tracker' classes
   * itSubmitsAHighScoreWhenTheScoreIsOver10: 20 cats
   * itDoesNotSubmitaAHighScoreWhenTheScoreIsOver10: 5 cats
