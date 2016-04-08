@@ -33,10 +33,18 @@ Coding demos to teach TDD, stubbing, and mocking
 
 
 ## Demo 4: Manual stubbing
-  * Show CatPicture class
-  * Show CatPictureService class
-  * itGives1PointForEachCatInThePicture: (3, false, false) -> 3
-  * itGivesAZeroRatingWhenTheServiceFailsToGetTheImage: (null) -> 0
+  * Show AssignmentMarker class
+  * Already some code here (explain plagiarism code)
+  * First problem - there are no tests on that logic (let's ignore this for now and come back later)
+  * Second problem - we want to add more logic (isTotallyCorrect / isHalfCorrect), but plagiarism bit is in the way
+
+  * How can we get it out of the way? `class NeverPlagiarisedService extends PlagiarismService`
+  * itScores5WhenNotPlagiarisedAndHalfCorrect
+  * itScores10WhenNotPlagiarisedAndTotallyCorrect
+
+  * Now we can come back and test the plagiarism bit - `class AlwaysPlagiarisedService extends PlagiarismService`
+  * itScores0WhenPlagiarised
+
 
 
 ## Demo 5: Stubbing using a framework
