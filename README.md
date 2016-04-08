@@ -22,7 +22,6 @@ Coding demos to teach TDD, stubbing, and mocking
   * 1 -> "1"          "1"
   * 2 -> "2"          Integer.toString(i)
   * 3 -> "Fizz"       if (i == 3)
-  * @Setup
   * 24 -> "Fizz"      if (i % 3 == 0)
   * Delete 3
   * 20 -> "Buzz"      if (i % 5 == 0)
@@ -56,8 +55,8 @@ Coding demos to teach TDD, stubbing, and mocking
   * It passes the assignment and mark to the email service
 
 
-
 ----
+
 
 Probably won't do these demos. Will probably talk about mockito, and *maybe* show code samples.
 But the demos are too much.
