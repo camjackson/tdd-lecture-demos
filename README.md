@@ -75,13 +75,6 @@ But the demos are too much.
   * itDoesNotDoubleTheKittenBonus: (3, true, true) -> 11              (Should get 16 at first)
   * Try to do (0, false, true) -> ArgException
 
-
-## Demo X: Using mocks to verify behaviour
-  * Write 'tracker' classes
-  * itSubmitsAHighScoreWhenTheScoreIsOver10: 20 cats
-  * itDoesNotSubmitaAHighScoreWhenTheScoreIsOver10: 5 cats
-
-
 ## Demo 7: Mocking with Mockito
   * Foo foo = mock(Foo.class)
   * verify(foo).bar("baz");
