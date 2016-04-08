@@ -64,7 +64,7 @@ But the demos are too much.
 
 
 
-## Demo X: Stubbing using a framework
+## Demo X: Stubbing with mockito
   * Foo foo = mock(Foo.class);
   * when(foo.bar("baz")).thenReturn("qux");
 
@@ -75,7 +75,7 @@ But the demos are too much.
   * itDoesNotDoubleTheKittenBonus: (3, true, true) -> 11              (Should get 16 at first)
   * Try to do (0, false, true) -> ArgException
 
-## Demo 7: Mocking with Mockito
+## Demo X: Mocking with Mockito
   * Foo foo = mock(Foo.class)
   * verify(foo).bar("baz");
   * verify(foo, never()).bar(anyString);
