@@ -14,6 +14,8 @@ Coding demos to teach TDD, stubbing, and mocking
 ## DEMO 2: Test-first (Divider)
   * Just delete the implementation and show all failing tests
   * Now just do whatever we can to make the tests pass
+  * Start with silly attempts, then concede that we need the actual implementation
+
 
 
 ## DEMO 3: TDD (Fizzbuzz)
@@ -29,7 +31,8 @@ Coding demos to teach TDD, stubbing, and mocking
   * main()
 
 
-## Demo 4: Dependency injection & manual stubbing
+
+## Demo 4: Manual stubbing
   * Show CatPicture class
   * Show CatPictureService class
   * itGives1PointForEachCatInThePicture: (3, false, false) -> 3
