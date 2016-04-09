@@ -1,7 +1,7 @@
 public class FizzBuzz {
 
     String fizzBuzz(int number) {
-        if (number == 3) {
+        if (number % 3 == 0) {
             return "Fizz";
         }
 

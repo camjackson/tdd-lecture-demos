@@ -12,6 +12,6 @@ public class FizzBuzzTest {
 
     @Test
     public void itReturnsFizzIfDivisibleByThree() {
-        assertEquals("Fizz", new FizzBuzz().fizzBuzz(3));
+        assertEquals("Fizz", new FizzBuzz().fizzBuzz(24));
     }
 }
