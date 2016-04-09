@@ -29,4 +29,10 @@ public class FizzBuzzTest {
     public void itStartsWithTheRightSequence() {
         assertEquals("1, 2, Fizz, 4, Buzz", new FizzBuzz().fizzBuzzSequence().substring(0, 19));
     }
+
+    @Test
+    public void itEndsWithTheRightSequence() throws Exception {
+        String sequence = new FizzBuzz().fizzBuzzSequence();
+        assertEquals("Fizz, 49, Buzz", sequence.substring(sequence.length() - 14));
+    }
 }

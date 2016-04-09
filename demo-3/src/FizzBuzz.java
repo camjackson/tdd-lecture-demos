@@ -18,6 +18,7 @@ public class FizzBuzz {
             result += fizzBuzz(i) + ", ";
         }
 
-        return result;
+        String resultWithNoTrailingComma = result.substring(0, result.length() - 2);
+        return resultWithNoTrailingComma;
     }
 }
