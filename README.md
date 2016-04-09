@@ -3,7 +3,7 @@
 Coding demos to teach TDD, stubbing, and mocking
 
 ## TODO:
-  * Remove the tests for demo 1
+  * Re-set all demos back to empty, so we can write them from scratch in the lecture
 
 ## DEMO 1: Unit testing (Divider)
   * Pre-written implementation of `int divide(int, int)`
@@ -53,31 +53,3 @@ Coding demos to teach TDD, stubbing, and mocking
   * Now we want to assert that the side effect happened
   * Make the Fake a Mock, and track the arguments
   * It passes the assignment and mark to the email service
-
-
-----
-
-
-Probably won't do these demos. Will probably talk about mockito, and *maybe* show code samples.
-But the demos are too much.
-
-
-
-## Demo X: Stubbing with mockito
-  * Foo foo = mock(Foo.class);
-  * when(foo.bar("baz")).thenReturn("qux");
-
-  * itGivesAZeroRatingWhenTheServiceFailsToGetTheImage: (null) -> 0
-  * itGives1PointForEachCatInThePicture: (3, false, false) -> 3
-  * itAdds5PointsWhenThereIsAKitten: (2, false, true) -> 7
-  * itGivesDoublePointsForCatsInCostumes: (2, true, false) -> 4       (Make it double everything)
-  * itDoesNotDoubleTheKittenBonus: (3, true, true) -> 11              (Should get 16 at first)
-  * Try to do (0, false, true) -> ArgException
-
-## Demo X: Mocking with Mockito
-  * Foo foo = mock(Foo.class)
-  * verify(foo).bar("baz");
-  * verify(foo, never()).bar(anyString);
-
-  * itSubmitsAHighScoreWhenTheScoreIsOver10: 20 cats
-  * itDoesNotSubmitaAHighScoreWhenTheScoreIsOver10: 5 cats
