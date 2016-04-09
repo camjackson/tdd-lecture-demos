@@ -14,7 +14,7 @@ public class FizzBuzz {
 
     String fizzBuzzSequence() {
         String result = "";
-        for (int i = 0; i <= 50; i++) {
+        for (int i = 1; i <= 50; i++) {
             result += fizzBuzz(i) + ", ";
         }
 
