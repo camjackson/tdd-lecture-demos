@@ -3,6 +3,8 @@
 Coding demos to teach TDD, stubbing, and mocking
 
 ## DEMO 1: Unit testing (Divider)
+  * RESIST THE URGE TO RUN TESTS ONE BY ONE!!!!
+
   * Pre-written implementation of `int divide(int, int)`
   * Wrap some tests around it - 6/2=3, 5/1=5, 7/7=1, 8/7=1, 7/8=0, 1/2=0, 1/0=0
   * A bit contrived, but now have confidence that it works
