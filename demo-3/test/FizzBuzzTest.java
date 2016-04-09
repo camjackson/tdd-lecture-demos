@@ -21,7 +21,12 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void itReturnsFizzbuzzIfDivisibleByThreeAndFive() {
+    public void itReturnsFizzBuzzIfDivisibleByThreeAndFive() {
         assertEquals("FizzBuzz", new FizzBuzz().fizzBuzz(45));
+    }
+
+    @Test
+    public void itStartsWithTheRightSequence() {
+        assertEquals("1, 2, Fizz, 4, Buzz", new FizzBuzz().fizzBuzzSequence().substring(0, 19));
     }
 }

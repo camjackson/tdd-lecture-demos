@@ -11,4 +11,13 @@ public class FizzBuzz {
 
         return Integer.toString(number);
     }
+
+    String fizzBuzzSequence() {
+        String result = "";
+        for (int i = 0; i <= 50; i++) {
+            result += fizzBuzz(i) + ", ";
+        }
+
+        return result;
+    }
 }
