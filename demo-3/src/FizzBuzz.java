@@ -21,4 +21,8 @@ public class FizzBuzz {
         String resultWithNoTrailingComma = result.substring(0, result.length() - 2);
         return resultWithNoTrailingComma;
     }
+
+    public static void main(String[] args) {
+        System.out.println(new FizzBuzz().fizzBuzzSequence());
+    }
 }
