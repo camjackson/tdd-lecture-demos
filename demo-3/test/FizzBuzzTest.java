@@ -19,4 +19,9 @@ public class FizzBuzzTest {
     public void itReturnsFizzIfDivisibleByFive() {
         assertEquals("Buzz", new FizzBuzz().fizzBuzz(20));
     }
+
+    @Test
+    public void itReturnsFizzbuzzIfDivisibleByThreeAndFive() {
+        assertEquals("FizzBuzz", new FizzBuzz().fizzBuzz(45));
+    }
 }
