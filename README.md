@@ -30,10 +30,12 @@ Coding demos to teach TDD, stubbing, and mocking
   * main()
 
 This demo can be reproduced step by step:
+
 For step 1: `git checkout tags/demo3-step-1`
-.
-.
-.
+
+...
+
+
 For step 10: `git checkout tags/demo3-step-10`
 
 
