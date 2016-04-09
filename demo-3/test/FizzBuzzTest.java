@@ -7,5 +7,6 @@ public class FizzBuzzTest {
     @Test
     public void itReturnsTheNumberAsStringIfNotDivisibleByThreeOrFive() {
         assertEquals("1", new FizzBuzz().fizzBuzz(1));
+        assertEquals("2", new FizzBuzz().fizzBuzz(2));
     }
 }

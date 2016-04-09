@@ -1,6 +1,6 @@
 public class FizzBuzz {
 
     String fizzBuzz(int number) {
-        return "1";
+        return Integer.toString(number);
     }
 }
