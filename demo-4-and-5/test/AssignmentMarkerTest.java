@@ -3,19 +3,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AssignmentMarkerTest {
-
-    class NeverPlagiarised extends PlagiarismService {
-        boolean assignmentIsPlagiarised(Assignment assignment) {
-            return false;
-        }
-    }
-
     @Test
-    public void itScores5WhenNotPlagiarisedAndHalfCorrect() throws Exception {
-        Assignment assignment = new Assignment(false, true);
-        PlagiarismService neverPlagiarised = new NeverPlagiarised();
+    public void itDoesSomething() throws Exception {
+        Assignment assignment = new Assignment(true, true);
+        PlagiarismService plagiarismService = new PlagiarismService();
 
-        int mark = new AssignmentMarker().markAssignment(assignment, neverPlagiarised);
-        assertEquals(5, mark);
+        int mark = new AssignmentMarker().markAssignment(assignment, plagiarismService);
+
+        assertEquals(-1, mark);
     }
 }
