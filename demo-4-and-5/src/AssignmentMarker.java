@@ -6,9 +6,9 @@ public class AssignmentMarker {
             mark = 0;
         } else if(assignment.isHalfCorrect()) {
             mark = 5;
+        } else if (assignment.isTotallyCorrect()) {
+            mark = 10;
         }
-
-//  assignment.isTotallyCorrect();
 
         return mark;
     }

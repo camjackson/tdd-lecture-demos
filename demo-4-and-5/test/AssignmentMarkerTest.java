@@ -18,4 +18,13 @@ public class AssignmentMarkerTest {
         int mark = new AssignmentMarker().markAssignment(assignment, neverPlagiarised);
         assertEquals(5, mark);
     }
+
+    @Test
+    public void itScores10WhenNotPlagiarisedAndTotallyCorrect() throws Exception {
+        Assignment assignment = new Assignment(true, false);
+        PlagiarismService neverPlagiarised = new NeverPlagiarised();
+
+        int mark = new AssignmentMarker().markAssignment(assignment, neverPlagiarised);
+        assertEquals(10, mark);
+    }
 }
