@@ -10,6 +10,12 @@ public class AssignmentMarkerTest {
         }
     }
 
+    class AlwaysPlagiarised extends PlagiarismService {
+        boolean assignmentIsPlagiarised(Assignment assignment) {
+            return true;
+        }
+    }
+
     @Test
     public void itScores5WhenNotPlagiarisedAndHalfCorrect() throws Exception {
         Assignment assignment = new Assignment(false, true);
@@ -26,5 +32,14 @@ public class AssignmentMarkerTest {
 
         int mark = new AssignmentMarker().markAssignment(assignment, neverPlagiarised);
         assertEquals(10, mark);
+    }
+
+    @Test
+    public void itScores0WhenPlagiarised() throws Exception {
+        Assignment assignment = new Assignment(false, true);
+        PlagiarismService neverPlagiarised = new AlwaysPlagiarised();
+
+        int mark = new AssignmentMarker().markAssignment(assignment, neverPlagiarised);
+        assertEquals(0, mark);
     }
 }
