@@ -1,15 +1,14 @@
 public class AssignmentMarker {
     int markAssignment(Assignment assignment, PlagiarismService plagiarismService) {
-        int mark;
+        int mark = -1;
 
         if (plagiarismService.assignmentIsPlagiarised(assignment)) {
             mark = 0;
-        } else {
-            mark = -1;
+        } else if(assignment.isHalfCorrect()) {
+            mark = 5;
         }
 
-//         assignment.isHalfCorrect();
-//         assignment.isTotallyCorrect();
+//  assignment.isTotallyCorrect();
 
         return mark;
     }
