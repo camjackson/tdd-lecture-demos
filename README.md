@@ -10,12 +10,20 @@ Coding demos to teach TDD, stubbing, and mocking
   * A bit contrived, but now have confidence that it works
   * Also get some documentation for free!
 
+This demo has 2 steps:
+
+For step 1: `git checkout tags/demo1-step-1`
+For step 2: `git checkout tags/demo1-step-2`
+
 ## DEMO 2: Test-first (Divider)
   * Just delete the implementation and show all failing tests
   * Now just do whatever we can to make the tests pass
   * Start with silly attempts, then concede that we need the actual implementation
 
+This demo has 2 steps:
 
+For step 1: `git checkout tags/demo2-step-1`
+For step 2: `git checkout tags/demo2-step-2`
 
 ## DEMO 3: TDD (Fizzbuzz)
   * 1 -> "1"          "1"
