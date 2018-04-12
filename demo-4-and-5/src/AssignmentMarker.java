@@ -1,5 +1,5 @@
 public class AssignmentMarker {
-    int markAssignment(Assignment assignment, PlagiarismService plagiarismService) {
+    int markAssignment(Assignment assignment, PlagiarismService plagiarismService, StudentEmailService emailService) {
         int mark = -1;
 
         if (plagiarismService.assignmentIsPlagiarised(assignment)) {
@@ -9,6 +9,8 @@ public class AssignmentMarker {
         } else if (assignment.isTotallyCorrect()) {
             mark = 10;
         }
+
+        emailService.emailStudentTheirResults(assignment, mark);
 
         return mark;
     }
