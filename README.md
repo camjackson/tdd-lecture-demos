@@ -59,6 +59,12 @@ For step 10: `git checkout tags/demo3-step-10`
   * Now we can come back and test the plagiarism bit - `class AlwaysPlagiarisedService extends PlagiarismService`
   * itScores0WhenPlagiarised
 
+This demo can be reproduced step by step:
+
+For step 1: `git checkout tags/demo4-step-1`
+...
+For step 4: `git checkout tags/demo4-step-4`
+
 
 ## Demo 5: Manual mocking
   * Inject a StudentEmailService and call it at the end
@@ -68,3 +74,6 @@ For step 10: `git checkout tags/demo3-step-10`
   * Now we want to assert that the side effect happened
   * Make the Fake a Mock, and track the arguments
   * It passes the assignment and mark to the email service
+
+For step 1: `git checkout tags/demo5-step-1`
+For step 2: `git checkout tags/demo5-step-2`
